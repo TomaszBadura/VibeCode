@@ -2,7 +2,7 @@
 name = "vibe_code_aurealis"
 version = "1.0.0"
 authors = [
-  { name="Aurealis", email="ytomek206@gmail.com" },
+  { name="Tomasz Badura", email="tomaszbadurakontakt@gmail.com" },
 ]
 description = "A package that embraces vibe coding."
 readme = "README.md"
