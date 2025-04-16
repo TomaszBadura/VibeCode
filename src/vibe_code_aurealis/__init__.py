@@ -6,7 +6,7 @@ def vibe(prompt: str, gemini_api_key: str):
 
     response = client.models.generate_content(
         model="gemini-2.0-flash", 
-        contents="Respond to this only with PYTHON 3.5 code that can be run in the python compiler, do not add anything other than code. The code should run any function necessary and at the end return to the stdout a value. This is the prompt: " + prompt
+        contents="Respond to this only with PYTHON 3.5+ code that can be compiled in the python3 compiler, do not add anything other than code to your answer. The code should run any function necessary and at the end return to the stdout a value requested by the prompt. The code you provide can be a single print statement with the answer. This is the prompt: " + prompt
     )
 
     lines = response.text.splitlines()
