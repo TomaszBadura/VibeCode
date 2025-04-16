@@ -1,0 +1,4 @@
+.pypirc
+/build
+/dist
+/src/vibe_code_aurealis.egg-info
