@@ -27,3 +27,15 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -e .
+
+  testpypi-publish:
+    name: upload release to test-PyPI
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
+    steps:
+      - name: Publish package distributions to test-PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/
