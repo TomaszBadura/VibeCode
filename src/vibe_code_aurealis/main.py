@@ -1,8 +1,8 @@
 import subprocess
 from google import genai
 
-def vibe(prompt: str, key: str):
-    client = genai.Client(api_key = key)
+def vibe(prompt: str, gemini_api_key: str):
+    client = genai.Client(api_key = gemini_api_key)
 
     response = client.models.generate_content(
         model="gemini-2.0-flash", 
