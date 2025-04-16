@@ -4,6 +4,9 @@ version = "1.0.0"
 authors = [
   { name="Tomasz Badura", email="tomaszbadurakontakt@gmail.com" },
 ]
+dependencies = [
+    "google-generativeai"
+]
 description = "A package that embraces vibe coding."
 readme = "README.md"
 requires-python = ">=3.9"
