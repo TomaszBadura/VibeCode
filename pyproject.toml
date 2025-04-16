@@ -5,11 +5,11 @@ authors = [
   { name="Tomasz Badura", email="tomaszbadurakontakt@gmail.com" },
 ]
 dependencies = [
-    "google-generativeai"
+    "google-genai"
 ]
 description = "A package that embraces vibe coding."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
