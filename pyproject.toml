@@ -8,6 +8,7 @@ dependencies = [
     "google-generativeai"
 ]
 description = "A package that embraces vibe coding."
+long_description = "A package that embraces vibe coding."
 readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
