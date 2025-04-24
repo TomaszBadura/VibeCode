@@ -4,6 +4,21 @@ from google import genai
 class Vibe(object):
     def __init__(self):
         self.config = {"API_KEY": None}
+    
+    def imagine(self, prompt: str):
+        gemini_api_key = self.config.get("API_KEY")
+
+        if gemini_api_key is None:
+            raise Exception("Gemini api key not set, set the vibecode config 'API_KEY' property")
+
+        client = genai.Client(api_key = gemini_api_key)
+
+        response = client.models.generate_content(
+            model="gemini-2.0-flash", 
+            contents=prompt
+        )
+
+        return response.text
 
     def code(self, prompt: str, execute = True):
         gemini_api_key = self.config.get("API_KEY")
